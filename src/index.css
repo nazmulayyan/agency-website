@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* swiper js coustomize  */
+.swiper-pagination-bullet {
+    width: 30px !important;
+    height: 4px !important;
+    background: white !important;
+    border-radius: 0px !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff497c !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 50px !important;
+}
+
+/* if need this overlay top of the banner image just uncomment it */
+
+/* .overlay::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #1f2732;
+    opacity: 0.3;
+} */
