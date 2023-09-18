@@ -6,10 +6,21 @@ import Portfolio from "../Pages/Portfolio/Portfolio";
 import Service from "../Pages/Service/Service";
 
 export const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
         path: "/",
-<<<<<<< HEAD
         element: <Home></Home>,
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio />,
+      },
+      {
+        path: "/service",
+        element: <Service />,
       },
       {
         path: "/contact",
@@ -18,27 +29,3 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
-=======
-        element: <Main></Main>,
-        children: [
-            {
-                path: "/",
-                element: <Home></Home>,
-            },
-            {
-                path: "/portfolio",
-                element: <Portfolio />,
-            },
-            {
-                path: "/service",
-                element: <Service/>,
-            },
-            {
-                path: "/contact",
-                element: <Contact></Contact>,
-            },
-        ],
-    },
-]);
-
->>>>>>> 78f6a5c1a660b35d39c5f4b64f6648ad846f4b02
