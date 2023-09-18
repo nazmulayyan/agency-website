@@ -2,7 +2,6 @@ import img2 from '../../../assets/Home/whoWeAre/about-05.jpg'
 import img1 from '../../../assets/Home/whoWeAre/about-04.jpg'
 import Title from '../../../Components/Title/Title';
 import { HiCheck } from "react-icons/hi2";
-import './WhoWeAre.css'
 const WhoWeAre = () => {
     return (
         <div className='w-10/12 mx-auto my-20'>

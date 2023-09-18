@@ -14,7 +14,7 @@ const ServiceItem = () => {
                 <img className='rounded bg-cover' src={img1} alt="" />
 
                 <div className='absolute bg-black infoTitle bg-opacity-60 w-full h-full top-0 left-0 rounded'>
-                    <h4 className='text-4xl pt-24 pl-12 font-bold text-white'>web <br /> designing</h4>
+                    <h4 className='text-4xl pt-16 pl-12 font-bold text-white'>web <br /> designing</h4>
 
                     <div className='infoText'>
                         <p className='text-navMenu pl-12 pt-5 pr-14 pb-4 text-[14px] font-semibold'>We offers plan and assemble managing for you from startups to the last creation or closing creation.</p>
@@ -32,7 +32,7 @@ const ServiceItem = () => {
                 <img className='rounded bg-cover' src={img2} alt="" />
 
                 <div className='absolute bg-black infoTitle bg-opacity-60 w-full h-full top-0 left-0 rounded'>
-                    <h4 className='text-4xl pt-24 pl-12 font-bold text-white'>web <br /> Development</h4>
+                    <h4 className='text-4xl pt-16 pl-12 font-bold text-white'>web <br /> Development</h4>
 
                     <div className='infoText'>
                         <p className='text-navMenu pl-12 pt-5 pr-14 pb-4 text-[14px] font-semibold'>We offers plan and assemble managing for you from startups to the last creation or closing creation.</p>
@@ -46,11 +46,11 @@ const ServiceItem = () => {
                 </div>
             </div>
             {/* serviceItem 03 */}
-            <div className='relative serviceItem'>
-                <img className='rounded bg-cover' src={img3} alt="" />
+            <div className='relative serviceItem '>
+                <img className='rounded bg-cover ' src={img3} alt="" />
 
                 <div className='absolute bg-black infoTitle bg-opacity-60 w-full h-full top-0 left-0 rounded'>
-                    <h4 className='text-4xl pt-24 pl-12 font-bold text-white'>web <br /> Application</h4>
+                    <h4 className='text-4xl pt-16 pl-12 font-bold text-white'>web <br /> Application</h4>
 
                     <div className='infoText'>
                         <p className='text-navMenu pl-12 pt-5 pr-14 pb-4 text-[14px] font-semibold'>We offers plan and assemble managing for you from startups to the last creation or closing creation.</p>
