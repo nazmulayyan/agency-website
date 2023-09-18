@@ -6,11 +6,11 @@ import './Portfolio.css'
 
 const Portfolio = () => {
     return (
-        <section className=" overflowhidden">
+        <section className=" overflow-auto">
             {/* banner section */}
             <Banner />
             {/* card section */}
-            <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 space-x-6 space-y-12 container mx-auto my-[150px] ">
+            <div className=" md:grid lg:grid-cols-3 md:grid-cols-2 gap-8 w-10/12 mx-auto py-[150px]">
                 {
                     PortfoliDAta?.map((CardData, index) => <PortfolioCard key={index} CardData={CardData} />)
                 }
