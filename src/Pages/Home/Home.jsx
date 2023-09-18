@@ -1,13 +1,19 @@
-import Title from "../../Components/Title/Title";
 import Banner from "./Banner/Banner";
+import BlogItems from "./BlogItems/BlogItems";
+import ServiceMarquee from "./ServiceMarquee/ServiceMarquee";
+import Testimonials from "./Testimonials/testimonials";
+import WhatWeDo from "./WhatWeDo/WhatWeDo";
+import WhoWeAre from "./WhoWeAre/WhoWeAre";
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div className="my-20">
-            <Title subheading='what we do' heading='Services That Help You Grow.'></Title>
-            </div>
+            <WhatWeDo></WhatWeDo>
+            <WhoWeAre></WhoWeAre>
+            <Testimonials></Testimonials>
+            <ServiceMarquee></ServiceMarquee>
+            <BlogItems></BlogItems>
         </div>
     );
 };

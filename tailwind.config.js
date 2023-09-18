@@ -21,10 +21,7 @@ export default {
       },
       backgroundColor: {
         bgSecondary: '#1f2732'
-
       },
-      
-
     },
   },
   plugins: [],

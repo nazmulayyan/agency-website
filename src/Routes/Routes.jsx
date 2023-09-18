@@ -10,6 +10,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
+<<<<<<< HEAD
         element: <Home></Home>,
       },
       {
@@ -19,3 +20,15 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
+=======
+        element: <Main></Main>,
+        children: [
+            {
+                path: "/",
+                element: <Home></Home>,
+            },
+            
+        ]
+    },
+]);
+>>>>>>> 017f1648262380f16b131cb2e034b7e4e6c3bde7
