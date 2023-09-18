@@ -5,7 +5,9 @@ const WhatWeDo = () => {
     return (
         <div className="py-20 bg-gray-100">
             <div className="container mx auto">
-                <Title subheading='what we do' heading='Services That Help You Grow.'></Title>
+                <div className="text-center">
+                    <Title subheading='what we do' heading='Services That Help You Grow.'></Title>
+                </div>
                 <div className="mt-20">
                     <ServiceItem></ServiceItem>
                 </div>
