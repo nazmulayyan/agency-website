@@ -54,7 +54,7 @@ const BlogItems = () => {
                     <div className="bg-white rounded">
                         <div className="imageHover relative">
                             <figure>
-                                <img className="rounded-t" src={img1} alt="" />
+                                <img className="rounded-t" src={img3} alt="" />
                             </figure>
                         </div>
                         <div className="pt-6 px-5">
