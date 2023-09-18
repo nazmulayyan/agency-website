@@ -12,7 +12,7 @@ const Testimonials = () => {
                 <div className="text-center">
                     <Title subheading='OUR TESTIMONIALS' heading='What They’re Saying?'></Title>
                 </div>
-                <div className="mt-20">
+                <div className="mt-20"> 
                     <div className="md:grid grid-cols-3 gap-8 space-y-8 md:space-y-0">
                         {/* testimonial 01 */}
                         <div >

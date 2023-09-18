@@ -1,3 +1,5 @@
+import ContactForm from "./ContactForm/ContactForm";
+
 const Contact = () => {
   return (
     <>
@@ -6,11 +8,11 @@ const Contact = () => {
         <img
           src="https://flywebhtml.websitelayout.net/img/banner/page-title.jpg"
           alt=""
-          className="w-full h-[250px] md:h-full bg-cover bg-no-repeat bg-slate-900 bg-opacity-60 "
+          className="w-full h-[250px] md:h-full bg-cover bg-no-repeat"
         />
 
         {/* Overlay texts on contact page banner */}
-        <div className="absolute  bg-slate-900 bg-opacity-60 top-0 left-0 w-full h-full overlay">
+        <div className="absolute  bg-slate-900 bg-opacity-60 top-0 left-0 w-full h-full overlay mb-20">
           <div className="container md:mx-28">
             {/* banner texts here */}
             <div className="">
@@ -32,6 +34,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {/* Contact form */}
+      <ContactForm></ContactForm>
     </>
   );
 };
