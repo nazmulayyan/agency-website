@@ -8,9 +8,9 @@ const Portfolio = () => {
     return (
         <section className=" overflowhidden">
             {/* banner section */}
-            <Banner />
+            <Banner title={"Portfolio standard"} />
             {/* card section */}
-            <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 space-x-6 space-y-12 container mx-auto my-[150px] ">
+            <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 space-y-12 space-x-6 container mx-auto my-[150px] ">
                 {
                     PortfoliDAta?.map((CardData, index) => <PortfolioCard key={index} CardData={CardData} />)
                 }
