@@ -3,7 +3,7 @@ import { BiSearch } from 'react-icons/bi';
 const BlogSearch = () => {
     return (
         <div className='flex items-center'>
-            <input type="text" placeholder='Search here ...' className='py-5 px-3 outline-none text-black text-lg font-medium' />
+            <input type="text" placeholder='Search here ...' className='py-5 px-3 outline-none text-black text-lg font-medium w-full' />
             <button className='bg-[#FF497C] py-5 px-8  font-bold text-[30px]'><BiSearch /></button>
         </div>
     )
