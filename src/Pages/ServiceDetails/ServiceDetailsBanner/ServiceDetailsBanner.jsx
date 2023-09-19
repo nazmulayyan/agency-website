@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import ContactForm from "./ContactForm/ContactForm";
 
-const Contact = () => {
+const ServiceDetailsBanner = ({ title }) => {
   return (
-    <>
+    <div>
       <div className="relative">
         {/* Contact page banner */}
         <img
@@ -18,7 +17,7 @@ const Contact = () => {
             {/* banner texts here */}
             <div className="">
               <h2 className="md:text-7xl text-3xl text-white font-bold md:mt-48 mt-28">
-                Contact Us
+                {title}
               </h2>
               <div className="flex items-center gap-5">
                 <Link
@@ -31,17 +30,15 @@ const Contact = () => {
                 <p className="bg-buttonBg py-[2px] mt-2 px-4 rounded-sm"></p>
 
                 <h4 className="md:text-2xl font-semibold mt-2 text-gray-300">
-                  Contact Us
+                  {title}
                 </h4>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* Contact form */}
-      <ContactForm></ContactForm>
-    </>
+    </div>
   );
 };
 
-export default Contact;
+export default ServiceDetailsBanner;
