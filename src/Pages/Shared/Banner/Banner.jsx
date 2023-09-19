@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 
 
-const Banner = () => {
+const Banner = ({title,}) => {
     return (
-        <div className="relative overflow-x-hidden">
+        <div className="relative overflow-x-hidden ">
             {/* Contact page banner */}
             <img
                 src="https://flywebhtml.websitelayout.net/img/banner/page-title.jpg"
@@ -16,17 +17,17 @@ const Banner = () => {
                     {/* banner texts here */}
                     <div className="">
                         <h2 className="md:text-7xl text-3xl text-white font-bold md:mt-48 mt-28">
-                            Portfolio Standard
+                         {title}
                         </h2>
                         <div className="flex items-center gap-5">
-                            <h3 className="md:text-2xl font-semibold mt-2 text-white  after:bg-[#ff497c] after:w-[10px]">
+                            <Link to="/" className="md:text-2xl font-semibold mt-2 text-white  after:bg-[#ff497c] after:w-[10px]">
                                 Home
-                            </h3>
+                            </Link>
 
                             <p className="bg-buttonBg py-[2px] mt-2 px-4 rounded-sm"></p>
 
                             <h4 className="md:text-2xl font-semibold mt-2 text-[#ffffff] opacity-[0.6]">
-                                Portfolio Standard
+                               {title}
                             </h4>
                         </div>
                     </div>
