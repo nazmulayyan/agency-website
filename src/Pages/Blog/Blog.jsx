@@ -54,7 +54,7 @@ const Blog = () => {
                     </div>
                     <div className={`${SidebarStyle}`}>
                         <h3 className="pb-5 text-xl font-bold ">Tags</h3>
-                        <div className="grid grid-cols-2  gap-4" style={{ gridAutoFlow: "dense" }}>
+                        <div className="flex flex-wrap gap-2" style={{ gridAutoFlow: "dense" }}>
                             <BlogTag blogTag={"Consulting"} />
                             <BlogTag blogTag={"Agency"} />
                             <BlogTag blogTag={"Business"} />

@@ -1,13 +1,10 @@
-import TitleCover from "../../Components/TitleCover/TitleCover";
 import ContactForm from "./ContactForm/ContactForm";
+import TitleCover from "../../Components/TitleCover/TitleCover";
 
 const Contact = () => {
   return (
     <>
-      <div className="relative">
-        {/* Contact page banner */}
-        <TitleCover serviceText='Our service' pageTitle='Our service'></TitleCover>
-      </div>
+      <TitleCover serviceText='Our contact' pageTitle='Our contact'></TitleCover>
       {/* Contact form */}
       <ContactForm></ContactForm>
     </>

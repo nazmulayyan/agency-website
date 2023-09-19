@@ -83,3 +83,20 @@ body {
     left: 125%;
   }
 }
+
+/* .iconHover:hover .contactIcon {
+  transform: rotateY(180deg);
+  background: #ff497c
+} */
+.contactIcon{
+  transition: all 0.5s;
+}
+
+.contactIcon:hover .iconHover {
+  transform: rotateY(180deg);
+  background: #ff497c
+}
+:focus-visible {
+  outline: 0.2px solid #ff497c;
+  outline-offset: -1px;
+}

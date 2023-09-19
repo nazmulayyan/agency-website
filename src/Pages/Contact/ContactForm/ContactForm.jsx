@@ -1,9 +1,10 @@
 import Title from "../../../Components/Title/Title";
-import { FaFacebook, FaPinterest } from "react-icons/fa";
+import { FaFacebookF, FaPinterest } from "react-icons/fa";
 import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 import MapLocation from "./MapLocation";
 
 const ContactForm = () => {
+
   return (
     <>
       <div>
@@ -29,7 +30,7 @@ const ContactForm = () => {
                       name="name"
                       placeholder="Your name here"
                       id=""
-                      className="p-3 w-[250px] md:w-[300px] outline-[#ff497c]   border border-gray-300 mt-2"
+                      className="p-3 w-[250px] md:w-[300px] focus-visible:  outline-[#ff497c]   border border-gray-300 mt-2"
                     />
                   </div>
 
@@ -107,12 +108,13 @@ const ContactForm = () => {
               {/* Contact info */}
               {/* email */}
               <div className="flex items-center gap-5 md:mt-10 mt-5 border-b-2  border-slate-700 pb-5">
-                <div>
-                  <img
-                    src="https://flywebhtml.websitelayout.net/img/icons/04.png"
-                    alt=""
-                    className="bg-slate-500 p-5"
-                  />
+                <div className="contactIcon">
+                  <div className="bg-slate-500 iconHover hover:bg-buttonBg duration-200  p-5">
+                    <img
+                      src="https://flywebhtml.websitelayout.net/img/icons/04.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div className="text-white">
                   <h2>Send E-Mail</h2>
@@ -152,12 +154,15 @@ const ContactForm = () => {
 
               {/* Social icons */}
               <div className="flex gap-5 ">
-                <div>
+                <div className="text-navMenu duration-200 bg-white p-2 rounded-full  hover:bg-[#ff497c] text-[14px]">
+                  <FaFacebookF />
+                </div>
+                {/* <div>
                   <FaFacebook
                     className="text-white transition ease-in hover:text-[#ff497c]"
                     size={"30px"}
-                  ></FaFacebook>
-                </div>
+                  >
+                </div> */}
                 <div>
                   <AiFillTwitterCircle
                     className="text-white transition ease-in hover:text-[#ff497c]"
