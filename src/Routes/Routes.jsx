@@ -3,11 +3,9 @@ import Main from "../LayOut/Main";
 import Home from "../Pages/Home/Home";
 import Contact from "../Pages/Contact/Contact";
 import Portfolio from "../Pages/Portfolio/Portfolio";
-<<<<<<< HEAD
-import Blog from "../Pages/Blog/Blog";
-=======
 import Service from "../Pages/Service/Service";
->>>>>>> 03850770e535f48884d0ff2fc750e7cb34558177
+import Blog from "../Pages/Blog/Blog";
+import PortfolioDetails from "../Pages/Portfolio/PortfolioDetails/PortfolioDetails";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +19,10 @@ export const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio />,
+      },
+      {
+        path: "/details",
+        element: <PortfolioDetails />,
       },
       {
         path: "/service",
