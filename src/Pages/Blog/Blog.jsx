@@ -13,18 +13,18 @@ const Blog = () => {
     const SidebarStyle = "bg-[#1F2732] px-8 py-7 text-white rounded-md"
     const socialIconStyle = "bg-white text-[#FF497C] text-[50px] p-4 hover:bg-[#FF497C] hover:text-white transition-all duration-700"
     return (
-        <section className="">
+        <section className="bg-[#F3F4F6]">
             {/* banner */}
             <Banner title="Right Sidebar" />
             {/* blog card */}
-            <div className="container py-[120px] flex gap-24">
-                <div className="grid grid-cols-2 gap-14 w-full md:w-1/2 lg:w-2/3">
+            <div className="container py-[120px] lg:flex gap-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-14 w-full lg:w-2/3">
                     {
                         blogsData.map((blog, index) => <BlogCard key={index} blog={blog} />)
                     }
                 </div>
                 {/* side bar */}
-                <div className="w-full md:w-1/2 lg:w-1/3 space-y-8">
+                <div className="w-full  lg:w-1/3 space-y-8">
                     <div className={`${SidebarStyle}`}>
                         <h3 className="pb-5 text-xl font-bold ">Search</h3>
                         <BlogSearch />
@@ -33,7 +33,7 @@ const Blog = () => {
                         <h3 className="pb-5 text-xl font-bold ">Recent Posts</h3>
                         <div className="flex flex-col items-center gap-6">
                             {
-                                blogsData.slice(0,3).map((blog, index) => (
+                                blogsData.slice(0, 3).map((blog, index) => (
                                     <RecentBlogCard key={index} blog={blog} />
                                 ))
                             }
