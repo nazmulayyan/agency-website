@@ -153,25 +153,28 @@ const ContactForm = () => {
               {/* Social icons */}
               <div className="flex gap-5 ">
                 <div>
-                  <FaFacebook className="text-white" size={"30px"}></FaFacebook>
+                  <FaFacebook
+                    className="text-white transition ease-in hover:text-[#ff497c]"
+                    size={"30px"}
+                  ></FaFacebook>
                 </div>
                 <div>
                   <AiFillTwitterCircle
-                    className="text-white"
+                    className="text-white transition ease-in hover:text-[#ff497c]"
                     size={"30px"}
                   ></AiFillTwitterCircle>
                 </div>
 
                 <div>
                   <AiFillLinkedin
-                    className="text-white"
+                    className="text-white transition ease-in hover:text-[#ff497c]"
                     size={"30px"}
                   ></AiFillLinkedin>
                 </div>
 
                 <div>
                   <FaPinterest
-                    className="text-white"
+                    className="text-white transition ease-in hover:text-[#ff497c]"
                     size={"30px"}
                   ></FaPinterest>
                 </div>
