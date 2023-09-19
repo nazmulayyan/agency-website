@@ -40,4 +40,4 @@ const PortfolioDetails = () => {
     )
 }
 
-export default PortfolioDetails
+export default PortfolioDetails;
