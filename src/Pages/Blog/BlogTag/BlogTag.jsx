@@ -2,7 +2,7 @@
 
 const BlogTag = ({ blogTag }) => {
     return (
-        <div className="px-3 py-2 bg-[#FF497C] w-fit">{blogTag}</div>
+        <div className="cursor-pointer px-3 py-2 bg-[#FF497C] w-fit hover:bg-white hover:text-[#FF497C] transition-all duration-700">{blogTag}</div>
     )
 }
 

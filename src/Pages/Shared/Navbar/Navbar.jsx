@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import CtaButton from "../../../Components/CtaButton/CtaButton";
 import { HiBars3, HiXMark } from "react-icons/hi2";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
 
@@ -15,13 +15,26 @@ const Navbar = () => {
     ];
 
     const [open, setOpen] = useState(false);
+    // scroll background change
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            const position = window.pageYOffset;
+            setScrollPosition(position);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
-        <div className=" border-b shadow-sm fixed top-0 left-0 w-full z-50">
-            <div className="container mx-auto">
+        <div className={`border-b shadow-sm fixed top-0 left-0 w-full z-50 ${scrollPosition>0?"bg-white text-black transition-all duration-300":"text-white"} `}>
+            <div className="container mx-auto ">
                 <nav className="md:flex items-center justify-between py-4 z-10">
 
                     <div>
-                        <Link className="text-3xl text-navLinks uppercase" to="/">logo</Link>
+                        <Link className="text-3xl uppercase" to="/">logo</Link>
                     </div>
 
                     <ul className={`md:flex md:items-center md:pb-0 pb-5 absolute md:static bg-white md:bg-transparent  md:z-auto -z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${open ? 'top-[68px] opacity-100 md:h-auto h-[320px] ' : 'h-[-0px] top-[68px]'} md:opacity-100 opacity-0`}>
@@ -32,7 +45,7 @@ const Navbar = () => {
                                 key={linkItem.link}>
 
                                 <Link
-                                    className="text-base font-semibold uppercase md:text-navLinks text-navMenu hover:text-hoverNavMenu duration-200"
+                                    className="text-base font-semibold uppercase   hover:text-hoverNavMenu duration-200"
                                     to={linkItem.link}
                                 >
                                     {linkItem.name}

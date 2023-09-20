@@ -3,14 +3,9 @@ import Main from "../LayOut/Main";
 import Home from "../Pages/Home/Home";
 import Contact from "../Pages/Contact/Contact";
 import Portfolio from "../Pages/Portfolio/Portfolio";
-<<<<<<< HEAD
-import Blog from "../Pages/Blog/Blog";
-import Service from "../Pages/Service/Service";
-=======
 import Service from "../Pages/Service/Service";
 import Blog from "../Pages/Blog/Blog";
 import PortfolioDetails from "../Pages/Portfolio/PortfolioDetails/PortfolioDetails";
->>>>>>> 2745f594585006e9d2f5cb6fbe39988f96926478
 
 export const router = createBrowserRouter([
   {
