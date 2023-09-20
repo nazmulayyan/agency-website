@@ -1,10 +1,10 @@
 import Title from "../../../Components/Title/Title";
-import { FaFacebookF, FaPinterest } from "react-icons/fa";
-import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { BiLogoLinkedin, BiLogoPinterestAlt } from "react-icons/bi";
 import MapLocation from "./MapLocation";
 
 const ContactForm = () => {
-
   return (
     <>
       <div>
@@ -94,7 +94,7 @@ const ContactForm = () => {
             </div>
 
             {/* Contact details */}
-            <div className="md:w-3/6 bg-slate-900 md:p-14 p-10 rounded-md mt-10 md:mt-0">
+            <div className="md:w-3/6 bg-[#1f2732] md:p-14 p-10 rounded-md mt-10 md:mt-0">
               <div>
                 <Title subheading={"Contact"}></Title>
               </div>
@@ -107,8 +107,8 @@ const ContactForm = () => {
 
               {/* Contact info */}
               {/* email */}
-              <div className="flex items-center gap-5 md:mt-10 mt-5 border-b-2  border-slate-700 pb-5">
-                <div className="contactIcon">
+              <div className="flex items-center gap-5 md:mt-10 mt-5 border-b-2  border-slate-700 pb-5 contactIcon">
+                <div>
                   <div className="bg-slate-500 iconHover hover:bg-buttonBg duration-200  p-5">
                     <img
                       src="https://flywebhtml.websitelayout.net/img/icons/04.png"
@@ -123,12 +123,11 @@ const ContactForm = () => {
               </div>
 
               {/* Phone */}
-              <div className="flex items-center gap-5 md:mt-10 mt-5 border-b-2  border-slate-700 pb-5">
-                <div>
+              <div className="flex items-center gap-5 md:mt-10 mt-5 border-b-2  border-slate-700 pb-5 contactIcon">
+                <div className="bg-slate-500 iconHover hover:bg-buttonBg duration-200  p-5">
                   <img
                     src="https://flywebhtml.websitelayout.net/img/icons/05.png"
                     alt=""
-                    className="bg-slate-500 p-5"
                   />
                 </div>
                 <div className="text-white">
@@ -138,12 +137,11 @@ const ContactForm = () => {
               </div>
 
               {/* location */}
-              <div className="flex items-center gap-5 md:mt-10 mt-5  pb-5">
-                <div>
+              <div className="flex items-center gap-5 md:mt-10 mt-5  pb-5 contactIcon ">
+                <div className="bg-slate-500 iconHover hover:bg-buttonBg duration-200  p-5">
                   <img
                     src="https://flywebhtml.websitelayout.net/img/icons/03.png"
                     alt=""
-                    className="bg-slate-500 p-5"
                   />
                 </div>
                 <div className="text-white">
@@ -153,35 +151,21 @@ const ContactForm = () => {
               </div>
 
               {/* Social icons */}
-              <div className="flex gap-5 ">
-                <div className="text-navMenu duration-200 bg-white p-2 rounded-full  hover:bg-[#ff497c] text-[14px]">
+              <div className="flex gap-5 mt-5 ">
+                <div className="text-white duration-200 bg-[#4c525b] p-2 rounded-full  hover:bg-[#ff497c] text-[20px]">
                   <FaFacebookF />
                 </div>
-                {/* <div>
-                  <FaFacebook
-                    className="text-white transition ease-in hover:text-[#ff497c]"
-                    size={"30px"}
-                  >
-                </div> */}
-                <div>
-                  <AiFillTwitterCircle
-                    className="text-white transition ease-in hover:text-[#ff497c]"
-                    size={"30px"}
-                  ></AiFillTwitterCircle>
+
+                <div className="text-white duration-200 bg-[#4c525b] p-2 rounded-full  hover:bg-[#ff497c] text-[20px]">
+                  <AiOutlineTwitter></AiOutlineTwitter>
                 </div>
 
-                <div>
-                  <AiFillLinkedin
-                    className="text-white transition ease-in hover:text-[#ff497c]"
-                    size={"30px"}
-                  ></AiFillLinkedin>
+                <div className="text-white duration-200 bg-[#4c525b] p-2 rounded-full  hover:bg-[#ff497c] text-[20px]">
+                  <BiLogoLinkedin></BiLogoLinkedin>
                 </div>
 
-                <div>
-                  <FaPinterest
-                    className="text-white transition ease-in hover:text-[#ff497c]"
-                    size={"30px"}
-                  ></FaPinterest>
+                <div className="text-white duration-200 bg-[#4c525b] p-2 rounded-full   hover:bg-[#ff497c] text-[20px]">
+                  <BiLogoPinterestAlt></BiLogoPinterestAlt>
                 </div>
               </div>
             </div>

@@ -1,13 +1,16 @@
+import TitleCover from "../../Components/TitleCover/TitleCover";
 import HelpCard from "./HelpCard/HelpCard";
 import MainContent from "./MainContent/MainContent";
 import OurServices from "./OurServices/OurServices";
-import ServiceDetailsBanner from "./ServiceDetailsBanner/ServiceDetailsBanner";
 
 const ServiceDetails = () => {
   return (
     <div>
       {/* Service details banner */}
-      <ServiceDetailsBanner title={"Service Details"}></ServiceDetailsBanner>
+      <TitleCover
+        serviceText="Service Details"
+        pageTitle="Service details"
+      ></TitleCover>
 
       <div className="md:flex container mx-auto gap-10 mt-20 mb-20">
         {/* Sidebars */}
