@@ -151,7 +151,7 @@ const ContactForm = () => {
               </div>
 
               {/* Social icons */}
-              <div className="flex gap-5 mt-5 ">
+              <div className="flex gap-3 mt-5 ">
                 <div className="text-white duration-200 bg-[#4c525b] p-2 rounded-full  hover:bg-[#ff497c] text-[20px]">
                   <FaFacebookF />
                 </div>
